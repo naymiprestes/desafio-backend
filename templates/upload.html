@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{url_for('static', filename='./upload.css')}}"
+    />
+    <title>CNBA</title>
+  </head>
+  <body>
+    <h1>Resultados</h1>
+    {% block content %} {% for i in range(5) %}
+    <div class="divSaldo">
+      <h2>{{transacoes[i][0][7]}}</h2>
+      <div class="div">
+        {% for item in transacoes[i] %}
+        <ul>
+          <li>
+            <p>Tipo: {{item[0]}}</p>
+            <p>Data: {{item[1]}}</p>
+            <p>Valor: {{item[2]}}</p>
+            <p>CPF: {{item[3]}}</p>
+            <p>Cartão: {{item[4]}}</p>
+          </li>
+        </ul>
+        {% endfor %}
+      </div>
+      <p class="saldo">Saldo Total: {{saldos[i]}}</p>
+    </div>
+    {% endfor %} {% endblock %}
+  </body>
+</html>

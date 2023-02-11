@@ -1,0 +1,33 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+}
+
+.divArquivo {
+  display: flex;
+  flex-direction: column;
+  background-color: #6c788e;
+  gap: 12px;
+  padding: 24px;
+}
+
+label {
+  text-align: center;
+  font-weight: 600;
+}
+
+input {
+  height: 24px;
+}
+
+button {
+  background-color: #a6aec1;
+  border: none;
+  height: 32px;
+}

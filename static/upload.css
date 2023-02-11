@@ -1,0 +1,43 @@
+body {
+  background-color: #cfd5e1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 600;
+}
+
+h2 {
+  text-align: center;
+  font-weight: 400;
+}
+.div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+li {
+  list-style: none;
+  font-size: 12px;
+  border: #6c788e 1px solid;
+  padding: 20px;
+}
+
+.divSaldo {
+  border-bottom: #6c788e solid 2px;
+}
+
+.saldo {
+  text-align: center;
+  font-weight: 600;
+}
