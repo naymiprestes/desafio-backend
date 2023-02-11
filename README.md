@@ -4,13 +4,13 @@
 
 ### Tecnologias utilizadas
 
-- Python
-- Pandas
+- Flask
+- db.sqlite3
 
 ### Passos para instalação de tecnologias
 
 ```
-pip install pandas
+pip install -r requeriments.txt
 ```
 
 ### Passos para instalação de ambiente virtual
