@@ -1,31 +1,51 @@
-# desafio-backend
+# Projeto Backend - CNAB
 
-#### O projeto possuim um arquivo que contém os dados das movimentações financeiras de várias lojas.
+O projeto é referente ao envio de arquivo txt que contém os dados das movimentações financeiras de várias lojas.
 
-### Tecnologias utilizadas
+## Instalação de ambiente virtual
 
-- Flask
-- db.sqlite3
+1 - Crie o ambiente virtual
 
-### Passos para instalação de tecnologias
-
-```
-pip install -r requeriments.txt
+```bash
+  python -m venv venv
 ```
 
-### Passos para instalação de ambiente virtual
+2 - Ative o venv
 
-1 - Crie seu ambiente virtual:
+```bash
+- linux:
+  source venv/bin/activate
 
-```
-python -m venv venv
-```
-
-2 - Ative seu venv:
-
-```# linux:
-source venv/bin/activate
-
-# windows:
+- windows:
 .\venv\Scripts\activate
+
 ```
+
+## Rodando localmente
+
+Clone o projeto
+
+```bash
+  git clone https://github.com/naymiprestes/desafio-backend
+```
+
+Instale as dependências
+
+```bash
+  pip install -r requeriments.txt
+```
+
+Inicie o servidor
+
+```bash
+    python main.py
+```
+
+## Funcionalidades
+
+- Listagem de Empresas
+- Saldo das Empresas
+
+## Informações Adicionais
+
+É necessário selecionar o http://127.0.0.1:8000 disponível no terminal para ser direcionado a tela de envio do arquivo.
